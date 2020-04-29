@@ -5,7 +5,7 @@ let bodyparser = require('body-parser');
 
 let bcrypt = require('bcryptjs');
 let User = require('../model/user');
-let { registervalidation } = require('../routes/validation');
+let { registervalidation,loginvalidation } = require('../routes/validation');
 
 mongoose.connect('mongodb://localhost/authantication')
     .then(() => {
